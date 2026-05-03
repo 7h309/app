@@ -7,8 +7,8 @@ from telebot import TeleBot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 app = Flask(__name__)
-TOKEN = "8681664117:AAHOmLod5sozxgYJVv_iBifGEgR1QsdnWAo"
-CHANNEL_USERNAME = "@Z_7za"  # غير هذا الى يوزر قناتك الصحيح
+TOKEN = "8583653170:AAFg7ZfCYfOJccY0X-z7DT6C0ZJ0hmN-1hA"
+CHANNEL_USERNAME = "@Z_7za"
 bot = TeleBot(TOKEN)
 
 @app.route("/", methods=["GET"])
