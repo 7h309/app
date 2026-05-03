@@ -2,13 +2,14 @@ import os
 import random
 import string
 from flask import Flask, request
+import telebot
 from telebot import TeleBot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
-app = Flask(زيرو)
-TOKEN = os.environ.get(8681664117:AAHOmLod5sozxgYJVv_iBifGEgR1QsdnWAo)
-CHANNEL_USERNAME = os.environ.get(Z_7za)
-bot = TeleBot(8681664117:AAHOmLod5sozxgYJVv_iBifGEgR1QsdnWAo)
+app = Flask(__name__)
+TOKEN = "8681664117:AAHOmLod5sozxgYJVv_iBifGEgR1QsdnWAo"
+CHANNEL_USERNAME = "@Z_7za"  # غير هذا الى يوزر قناتك الصحيح
+bot = TeleBot(TOKEN)
 
 @app.route("/", methods=["GET"])
 def home():
